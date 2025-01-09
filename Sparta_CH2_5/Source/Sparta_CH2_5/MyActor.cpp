@@ -39,6 +39,8 @@ void AMyActor::BeginPlay()
 		// 이벤트 
 		bool bTriggerEvent = static_cast<bool>(createEvent());
 		startEvent(bTriggerEvent);
+
+		UE_LOG(LogTemp, Log, TEXT("============================="));
 	}
 	// 이동한 거리 총합
 	totDist = distance(FVector2D::ZeroVector, start);
